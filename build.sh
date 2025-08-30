@@ -2,7 +2,7 @@
 
 mkdir build
 cd build
-apt update
-apt install cmake
+DEBIAN_FRONTEND=noninteractive apt update
+DEBIAN_FRONTEND=noninteractive apt install -y cmake
 cmake ..
 make install
